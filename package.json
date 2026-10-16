@@ -1,0 +1,38 @@
+{
+  "name": "dsh-session-import",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Copy, convert and resume coding harness sessions in DSH",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "author": "Lipraty",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lipraty/dsh-session-import.git"
+  },
+  "homepage": "https://github.com/Lipraty/dsh-session-import#readme",
+  "bugs": {
+    "url": "https://github.com/Lipraty/dsh-session-import/issues"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ]
+}
