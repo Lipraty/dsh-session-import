@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-import",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "Copy, convert and resume coding harness sessions in DSH",
   "type": "module",
@@ -8,12 +8,20 @@
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "inject": [],
-      "platform": "web"
+      "platform": "web",
+      "external": [
+        "react",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
     }
   },
   "license": "MIT",
@@ -33,6 +41,7 @@
     "lib",
     "README.md",
     "LICENSE",
-    "THIRD_PARTY_NOTICES.md"
+    "THIRD_PARTY_NOTICES.md",
+    "cordis.patch.yml"
   ]
 }

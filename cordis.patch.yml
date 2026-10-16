@@ -1,0 +1,5 @@
+# Install the Host entry from this same package. Its dsh.client declaration
+# publishes the matching browser half through DSH's native module graph.
+- insert:
+    - id: session-import
+      name: dsh-session-import
